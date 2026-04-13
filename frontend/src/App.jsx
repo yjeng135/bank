@@ -1,3 +1,6 @@
+const API_BASE_URL = (import.meta.env.VITE_API_BASE_URL || 'http://localhost:3001').replace(/\/$/, '');
+const INVESTMENT_ADVICE_API_URL = `${API_BASE_URL}/api/investment-advice`;
+
 import React, { useState, useMemo, useEffect } from 'react';
 import { Wallet, TrendingUp, TrendingDown, PlusCircle, Trash2, Calendar, Tag, FileText, BarChart3, PieChart } from 'lucide-react';
 
